@@ -1,14 +1,5 @@
 version: "3.3"
 services:
-  db:
-    image: mysql:8.0
-    restart: always
-    env_file:
-      - .env
-    ports:
-      - "3306:3306"
-    volumes:
-      - my-db:/var/lib/mysql
   mailcatcher:
     container_name: mailcatcher
     image: sj26/mailcatcher
